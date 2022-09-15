@@ -1,0 +1,18 @@
+{
+  "name": "nasa-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "npm run watch --prefix server",
+    "client": "npm run build --prefix client",
+    "server-cluster": "npm run cluster --prefix server",
+    "deploy": "npm run client && npm run server",
+    "deploy-cluster": "npm run client && npm run server-cluster",
+    "dev": "concurrently \"npm run watch --prefix server\" \"npm start --prefix client\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
