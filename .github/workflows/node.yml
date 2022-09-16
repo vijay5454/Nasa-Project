@@ -7,7 +7,7 @@ on:
 jobs:
   build:
     env:
-      CI: true
+      CI: true  #To escape from watch mode in React
     strategy:
       matrix:
         node-version: [14.x, 16.x]
